@@ -51,15 +51,12 @@ Ideally, there would be a mechanism for Mashery to consume the JSON periodically
 
 # Features
 
-* Recognises HeaderParam, QueryParam, PathParam, and the supported request body serialisation classes (String, InputStream etc..)
-* Supports Integer, Boolean and String parameter types directly
+* Recognises `HeaderParam`, `QueryParam`, `PathParam`, and the supported request body serialisation classes (`String`, `InputStream` etc..)
+* Supports `Integer`, `Boolean` and `String` parameter types directly
 * All other parameter types will use I/O Docs type 'string'  
-* Boolean supported as "true"/"false" enumeration
-* Supports default parameter values for the supported parameter types
-** IoDocsDefaultBoolean
-** IoDocsDefaultString
-** IoDocsDefaultInteger
-* Supports removal of selected methods or parameters from I/O docs using IoDocsIgnore
-* Supports required properties using IoDocsRequired
-* Supports Enumeration values and descriptions using IoDocsEnum(Description)
+* `Boolean` supported as "true"/"false" enumeration
+* Supports default parameter values for the supported parameter types (`IoDocsDefaultBoolean`, `IoDocsDefaultString`, `IoDocsDefaultInteger`)
+* Supports removal of selected methods or parameters from I/O docs using `IoDocsIgnore`
+* Supports required properties using `IoDocsRequired`
+* Supports enumeration values and descriptions using `IoDocsEnum(Description)`
 * Supports parameter extensions to enhance regularly used parameters
