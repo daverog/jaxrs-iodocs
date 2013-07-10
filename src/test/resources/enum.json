@@ -1,0 +1,38 @@
+{
+  "name": "name",
+  "title": "title",
+  "description": "description",
+  "version": "1.0",
+  "basePath": "http://api.com/",
+  "protocol": "rest",
+  "auth": {
+    "key": {
+      "location": "query",
+      "param": "api_key"
+    }
+  },
+  "resources": {
+    "Product Methods": {
+      "methods": {
+        "EnumApi_query": {
+          "httpMethod": "GET",
+          "path": "/enum",
+          "parameters": {
+            "enum": {
+              "type": "string",
+              "location": "query",
+              "enum": [
+                "a",
+                "b"
+              ],
+              "enumDescriptions": [
+                "Letter a",
+                "Letter b"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

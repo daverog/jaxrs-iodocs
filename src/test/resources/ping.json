@@ -1,0 +1,66 @@
+{
+  "name": "name",
+  "title": "title",
+  "description": "description",
+  "version": "1.0",
+  "basePath": "http://api.com/",
+  "protocol": "rest",
+  "auth": {
+    "key": {
+      "location": "query",
+      "param": "api_key"
+    }
+  },
+  "resources": {
+    "Product Methods": {
+      "methods": {
+        "PingApi_ping": {
+          "httpMethod": "GET",
+          "path": "/ping",
+          "description": "Check that the API is active"
+        },
+        "queryName": {
+          "httpMethod": "GET",
+          "path": "/query/resource",
+          "description": "Run a query",
+          "parameters": {
+            "param1": {
+              "type": "int",
+              "location": "query",
+              "description": "Param1 does something",
+              "default": 2,
+              "required": true
+            },
+            "param2": {
+              "type": "string",
+              "location": "query",
+              "description": "Param2 does something",
+              "default": "true",
+              "enum": [
+                "true",
+                "false"
+              ],
+              "enumDescriptions": [
+                "true",
+                "false"
+              ]
+            },
+            "Accept": {
+              "type": "string",
+              "location": "header",
+              "description": "Accept mime-type",
+              "default": "text/plain",
+              "required": true,
+              "enum": [
+                "text/plain"
+              ],
+              "enumDescriptions": [
+                "Plain text"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

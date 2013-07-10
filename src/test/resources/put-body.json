@@ -1,0 +1,30 @@
+{
+  "name": "name",
+  "title": "title",
+  "description": "description",
+  "version": "1.0",
+  "basePath": "http://api.com/",
+  "protocol": "rest",
+  "auth": {
+    "key": {
+      "location": "query",
+      "param": "api_key"
+    }
+  },
+  "resources": {
+    "Product Methods": {
+      "methods": {
+        "PutBodyApi_create": {
+          "httpMethod": "PUT",
+          "path": "/resource",
+          "parameters": {
+            "requestBody": {
+              "type": "textarea",
+              "location": "body"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "name",
+  "title": "title",
+  "description": "description",
+  "version": "1.0",
+  "basePath": "http://api.com/",
+  "protocol": "rest",
+  "auth": {
+    "key": {
+      "location": "query",
+      "param": "api_key"
+    }
+  },
+  "resources": {
+    "Product Methods": {
+      "methods": {
+        "HeaderApi_query": {
+          "httpMethod": "GET",
+          "path": "/resource",
+          "parameters": {
+            "Accept": {
+              "type": "string",
+              "location": "header"
+            }
+          }
+        }
+      }
+    }
+  }
+}
