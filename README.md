@@ -19,7 +19,7 @@ new IoDocsGenerator().generateIoDocs(
 	Lists.<IoDocsParameter>newArrayList())
 ```
 
-This can be integrated into REST endpoint, to allow the JSON to be accessed from the API itself:
+This can be integrated into RESTful endpoint, to allow the JSON to be accessed from the API itself:
 
 ```java
 @GET
